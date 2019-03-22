@@ -22,7 +22,7 @@ func main() {
         S3Key:           aws.String(os.Getenv("PLUGIN_FILE_NAME")),
     }
 
-    result, err := svc.UpdateFunctionCode(input)
+    _, err := svc.UpdateFunctionCode(input)
     if err != nil {
         if aerr, ok := err.(awserr.Error); ok {
             switch aerr.Code() {
