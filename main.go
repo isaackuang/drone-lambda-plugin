@@ -47,5 +47,5 @@ func main() {
         os.Exit(1)
     }
 
-    fmt.Println(result)
+    fmt.Println("Update Success.")
 }
